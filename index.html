@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Weather Forecast App</h1>
+      <img src="cloud.png" width="70px" height="75px">
+    </div>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="location-permission">
+        <p>Allow access to your current location?</p>
+        <button id="allowBtn">Allow</button>
+        <button id="denyBtn">Deny</button>
+    </div>
+    <div id="currentWeather" class="weather-card">
+
+    </div>
+    <div class="charts">
+    
+      <canvas id="temperatureChart" width="400" height="200"></canvas><br>
+      <canvas id="humidityChart" width="400" height="200"></canvas><br>
+      <canvas id="windSpeedChart" width="400" height="200"></canvas>
+    </div><br>
+    <button onclick="print()">Print this page</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
