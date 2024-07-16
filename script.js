@@ -1,5 +1,5 @@
 const cityName = 'Delhi';
-const apiKey = 'd5552b78b4454ef2b9b0c22ce7c3688d';
+const apiKey = '';
 const apiUrl  =`https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${apiKey}`
 
 function fetchWeatherDataByCityName(cityName) {
